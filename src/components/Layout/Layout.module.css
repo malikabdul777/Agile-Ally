@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+}
+.dashboard {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+.header {
+  display: flex;
+  padding: 2rem 4rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header > :nth-child(1) {
+  font-size: 1.2rem;
+}
+.searchBar {
+  background-color: #fff;
+  border: 0.1rem solid #ddd;
+  width: 25%;
+  min-width: 23rem;
+  padding: 1rem 1rem;
+  border-radius: 0.8rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.searchBar > input {
+  background: transparent;
+  color: var(--black);
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+.profile > img {
+  height: 5rem;
+  width: 5rem;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.details > :nth-child(1) {
+  font-weight: bold;
+}
