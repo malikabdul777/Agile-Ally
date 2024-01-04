@@ -3,6 +3,7 @@
 // Thirdparty
 import moment from "moment/moment";
 import { BiSearch } from "react-icons/bi";
+import { Navigate, Outlet, useLocation } from "react-router-dom";
 
 // Utils
 
@@ -31,9 +32,14 @@ import styles from "./Layout.module.css";
 // Local Interfaces
 
 const Layout = () => {
+  const { pathname } = useLocation();
+
   return (
     <div className={styles.container}>
       <Sidebar />
+      {/* `` */}
+      {/* making dashboard the default route */}
+      {pathname === "/" && <Navigate to="/dashboard" />}
       <div className={styles.dashboard}>
         <div className={styles.header}>
           <span>{moment().format("dddd, Do MMM YYYY")}</span>
@@ -50,6 +56,9 @@ const Layout = () => {
               <span>abdulmalikshaikcad@gmail.com</span>
             </div>
           </div>
+        </div>
+        <div className={styles.content}>
+          <Outlet />
         </div>
       </div>
     </div>

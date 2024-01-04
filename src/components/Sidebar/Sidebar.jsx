@@ -38,16 +38,16 @@ const Sidebar = () => {
 
       <div className={styles.menu}>
         <NavLink to="dashboard" className={styles.item} title={"Dashboard"}>
-          <MdSpaceDashboard size={30} />
+          <MdSpaceDashboard size={25} />
         </NavLink>
         <NavLink to="calendar" className={styles.item} title={"Calendar"}>
-          <AiFillCalendar size={30} />
+          <AiFillCalendar size={25} />
         </NavLink>
         <NavLink to="board" className={styles.item} title={"Kanban Board"}>
-          <FaTasks size={30} />
+          <FaTasks size={25} />
         </NavLink>
         <NavLink to="users" className={styles.item} title={"Users"}>
-          <AiOutlineTable size={30} />
+          <AiOutlineTable size={25} />
         </NavLink>
       </div>
     </div>

@@ -53,3 +53,11 @@
 .details > :nth-child(1) {
   font-weight: bold;
 }
+.content {
+  display: flex;
+  min-height: 100%;
+  overflow-y: auto;
+}
+.content > div {
+  width: 100%;
+}
