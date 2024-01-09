@@ -56,6 +56,12 @@ const Calendar = () => {
     }
   };
 
+  const handleEventClick = (clickInfo) => {
+    if (confirm("Are you sure you want to delete this event?")) {
+      clickInfo.event.remove();
+    }
+  };
+
   return (
     <div className="calendar-container">
       <div>
@@ -78,6 +84,7 @@ const Calendar = () => {
           initialEvents={currentEvents}
           eventsSet={handleEvents}
           select={handleDateSelect}
+          eventClick={handleEventClick}
         />
       </div>
     </div>

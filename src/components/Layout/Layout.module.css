@@ -42,8 +42,8 @@
   justify-content: center;
 }
 .profile > img {
-  height: 5rem;
-  width: 5rem;
+  height: 3rem;
+  width: 3rem;
 }
 .details {
   display: flex;
