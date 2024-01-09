@@ -7,5 +7,5 @@
 }
 .MuiTableRow-root,
 .MuiTableCell-root {
-  border: none !important;
+  border: solid 0.5px var(--lightGrey) !important;
 }

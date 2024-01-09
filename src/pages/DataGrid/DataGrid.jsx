@@ -35,7 +35,7 @@ const DataGrid = () => {
     []
   );
 
-  const theme = useMemo(() => createTheme({ palette: { mode: "dark" } }), []);
+  const theme = useMemo(() => createTheme({ palette: { mode: "light" } }), []);
 
   return (
     <div className="table-container">
